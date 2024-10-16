@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building  done...'
+                echo 'Building is  done...'
                 // Add your build commands here
             }
         }
