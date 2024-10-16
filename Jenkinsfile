@@ -1,12 +1,23 @@
-pipeline{
- agent any
- 
- stages{
-    stage("Webhook-Pratical"){
-        steps{
-            git branch: "main", url: "https://github.com/Pallavi-1104/Jenkins-files.git"
-            echo "webhook"
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building...'
+                // Add your build commands here
+            }
         }
-    }
- } 
-} 
+        stage('Test') {
+            steps {
+                echo 'Testing...'
+                // Add your test commands here
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying...'
+                // Add your deployment commands here
+            }
+        }
+    }
+}
