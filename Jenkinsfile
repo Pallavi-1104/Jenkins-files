@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing is...'
+                echo 'Testing is done...'
                 // Add your test commands here
             }
         }
